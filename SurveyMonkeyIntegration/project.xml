@@ -56,14 +56,6 @@
                             <AddItem>
                                 <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
                                     <Prop Key="Virtual:ApplyStylesheetSkin" />
-                                    <Prop Key="ID" Value="CstPXTextEdit5" />
-                                    <Prop Key="DataField" Value="UsrAPIKey" />
-                                    <Prop Key="TextMode" Value="Password" />
-                                </PXTextEdit>
-                            </AddItem>
-                            <AddItem>
-                                <PXTextEdit TypeFullName="PX.Web.UI.PXTextEdit">
-                                    <Prop Key="Virtual:ApplyStylesheetSkin" />
                                     <Prop Key="ID" Value="CstPXTextEdit15" />
                                     <Prop Key="DataField" Value="UsrSurveyClientSecret" />
                                     <Prop Key="TextMode" Value="Password" />
@@ -633,12 +625,6 @@ GO
 IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrSurveyID' and Object_ID = Object_ID(N'CRSetup'))
 BEGIN
 	ALTER TABLE CRSetup ADD UsrSurveyID NVARCHAR(100) NULL
-END
-GO
-
-IF NOT EXISTS(SELECT * FROM Sys.Columns WHERE Name = N'UsrAPIKey' and Object_ID = Object_ID(N'CRSetup'))
-BEGIN
-	ALTER TABLE CRSetup ADD UsrAPIKey NVARCHAR(100) NULL
 END
 GO
 

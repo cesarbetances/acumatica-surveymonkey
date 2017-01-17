@@ -33,11 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PX.Data">
-      <HintPath>..\..\..\Pure\Site\Bin\PX.Data.dll</HintPath>
+      <HintPath>..\..\..\..\..\CodeJIRA\WebSites\Internal\SupportExtension\InternalSite\Site\Bin\PX.Data.dll</HintPath>
     </Reference>
-    <Reference Include="PX.Objects, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\workspace\WebSites\Pure\Site\Bin\PX.Objects.dll</HintPath>
+    <Reference Include="PX.Objects">
+      <HintPath>..\..\..\..\..\CodeJIRA\WebSites\Internal\SupportExtension\InternalSite\Site\Bin\PX.Objects.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
